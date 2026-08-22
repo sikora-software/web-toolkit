@@ -13,7 +13,7 @@ npm install --save-dev @sikora-software/eslint-config eslint
 ## Usage
 
 ```javascript
-import config from "@sikora-software/eslint-config";
+import config from '@sikora-software/eslint-config';
 
 export default config;
 ```

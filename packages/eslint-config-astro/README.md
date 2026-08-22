@@ -17,7 +17,7 @@ npm install --save-dev @sikora-software/eslint-config-astro eslint
 Create `eslint.config.js` in your Astro project:
 
 ```javascript
-import config from "@sikora-software/eslint-config-astro";
+import config from '@sikora-software/eslint-config-astro';
 
 export default config;
 ```

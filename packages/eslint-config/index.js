@@ -1,8 +1,8 @@
 // @ts-check
 
-import eslint from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+import eslint from '@eslint/js';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 export default [
   eslint.configs.recommended,
@@ -20,23 +20,23 @@ export default [
 
   {
     rules: {
-      "no-unused-vars": "off",
+      'no-unused-vars': 'off',
 
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          destructuredArrayIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
         },
       ],
 
-      "@typescript-eslint/no-non-null-assertion": "off",
+      '@typescript-eslint/no-non-null-assertion': 'off',
 
-      "@typescript-eslint/no-explicit-any": "warn",
+      '@typescript-eslint/no-explicit-any': 'warn',
 
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 
-      "@typescript-eslint/explicit-function-return-type": "error",
+      '@typescript-eslint/explicit-function-return-type': 'error',
     },
   },
 ];

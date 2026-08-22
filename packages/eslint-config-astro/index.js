@@ -1,84 +1,84 @@
 // @ts-check
 
-import * as astroParser from "astro-eslint-parser";
-import eslintPluginAstro from "eslint-plugin-astro";
-import importPluginX from "eslint-plugin-import-x";
-import jsxA11yX from "eslint-plugin-jsx-a11y-x";
-import typescriptParser from "@typescript-eslint/parser";
+import * as astroParser from 'astro-eslint-parser';
+import eslintPluginAstro from 'eslint-plugin-astro';
+import importPluginX from 'eslint-plugin-import-x';
+import jsxA11yX from 'eslint-plugin-jsx-a11y-x';
+import typescriptParser from '@typescript-eslint/parser';
 
-import baseConfig from "@sikora-software/eslint-config";
+import baseConfig from '@sikora-software/eslint-config';
 
 export default [
   ...baseConfig,
 
   // Astro recommended configuration.
-  ...eslintPluginAstro.configs["flat/recommended"],
+  ...eslintPluginAstro.configs['flat/recommended'],
 
   // Astro accessibility rules.
-  ...eslintPluginAstro.configs["jsx-a11y-recommended"],
+  ...eslintPluginAstro.configs['jsx-a11y-recommended'],
 
   // Astro-specific globals.
   {
     languageOptions: {
       globals: {
-        astroHTML: "readonly",
+        astroHTML: 'readonly',
       },
     },
   },
 
   // TypeScript files.
   {
-    files: ["**/*.ts", "**/*.tsx"],
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: typescriptParser,
     },
     rules: {
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 
-      "@typescript-eslint/explicit-function-return-type": "error",
+      '@typescript-eslint/explicit-function-return-type': 'error',
 
-      "no-unused-vars": "off",
+      'no-unused-vars': 'off',
 
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          destructuredArrayIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
         },
       ],
 
-      "@typescript-eslint/no-non-null-assertion": "off",
+      '@typescript-eslint/no-non-null-assertion': 'off',
 
-      "@typescript-eslint/no-explicit-any": "warn",
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
 
   // Astro files.
   {
-    files: ["**/*.astro"],
+    files: ['**/*.astro'],
 
     plugins: {
-      "jsx-a11y-x": jsxA11yX,
+      'jsx-a11y-x': jsxA11yX,
     },
 
     languageOptions: {
       parser: astroParser,
       parserOptions: {
         parser: typescriptParser,
-        extraFileExtensions: [".astro"],
+        extraFileExtensions: ['.astro'],
       },
     },
 
     rules: {
-      "jsx-a11y-x/alt-text": "error",
+      'jsx-a11y-x/alt-text': 'error',
 
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
 
   // Embedded scripts inside Astro files.
   {
-    files: ["**/*.astro/*.ts", "**/*.astro/*.js"],
+    files: ['**/*.astro/*.ts', '**/*.astro/*.js'],
 
     languageOptions: {
       parser: typescriptParser,
@@ -91,68 +91,63 @@ export default [
     ...importPluginX.flatConfigs.typescript,
 
     settings: {
-      "import-x/parsers": {
-        "@typescript-eslint/parser": [".ts", ".tsx"],
+      'import-x/parsers': {
+        '@typescript-eslint/parser': ['.ts', '.tsx'],
       },
 
-      "import-x/resolver": {
+      'import-x/resolver': {
         node: {
-          extensions: [".js", ".jsx", ".ts", ".tsx"],
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
 
         typescript: {
           alwaysTryTypes: true,
-          project: ["**/tsconfig.json"],
+          project: ['**/tsconfig.json'],
         },
       },
     },
 
     rules: {
-      "import-x/extensions": [
-        "error",
-        "ignorePackages",
+      'import-x/extensions': [
+        'error',
+        'ignorePackages',
         {
-          "": "never",
-          js: "never",
-          jsx: "never",
-          ts: "never",
-          tsx: "never",
+          '': 'never',
+          js: 'never',
+          jsx: 'never',
+          ts: 'never',
+          tsx: 'never',
         },
       ],
 
-      "import-x/order": [
-        "error",
+      'import-x/order': [
+        'error',
         {
-          groups: [
-            "builtin",
-            "external",
-            "internal",
-            ["parent", "sibling", "index"],
-          ],
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
 
           pathGroups: [
             {
-              pattern: "@/**",
-              group: "internal",
+              pattern: '@/**',
+              group: 'internal',
             },
           ],
 
-          pathGroupsExcludedImportTypes: ["builtin"],
+          pathGroupsExcludedImportTypes: ['builtin'],
 
           alphabetize: {
-            order: "asc",
+            order: 'asc',
             caseInsensitive: true,
           },
 
-          "newlines-between": "always",
+          'newlines-between': 'always',
         },
       ],
 
-      "sort-imports": [
-        "error",
+      'sort-imports': [
+        'error',
         {
           ignoreDeclarationSort: true,
-          memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
         },
       ],
     },
@@ -160,13 +155,6 @@ export default [
 
   // Ignore generated/build files.
   {
-    ignores: [
-      "dist",
-      "node_modules",
-      ".astro",
-      "types.generated.d.ts",
-      ".github",
-      "worker-configuration.d.ts",
-    ],
+    ignores: ['dist', 'node_modules', '.astro', 'types.generated.d.ts', '.github', 'worker-configuration.d.ts'],
   },
 ];
