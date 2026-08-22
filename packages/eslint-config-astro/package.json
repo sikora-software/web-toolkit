@@ -1,0 +1,48 @@
+{
+  "name": "@sikora-software/eslint-config-astro",
+  "version": "0.0.0",
+  "description": "Shared ESLint configuration for Astro projects using TypeScript and ESLint flat config.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-config-astro",
+    "astro",
+    "astrojs",
+    "typescript",
+    "linting",
+    "code-quality",
+    "eslint-flat-config"
+  ],
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  },
+  "dependencies": {
+    "@sikora-software/eslint-config": "workspace:*",
+    "@typescript-eslint/parser": "^8.67.0",
+    "astro-eslint-parser": "^3.1.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-astro": "^3.1.0",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/eslint-config-astro"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/eslint-config-astro",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  }
+}

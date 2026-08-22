@@ -1,0 +1,42 @@
+{
+  "name": "@sikora-software/eslint-config",
+  "version": "0.0.0",
+  "description": "Shared ESLint configuration for JavaScript and TypeScript projects.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "typescript",
+    "linting",
+    "code-quality",
+    "eslint-flat-config"
+  ],
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "globals": "^17.11.0",
+    "typescript-eslint": "^8.67.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/eslint-config"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/eslint-config",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  }
+}
