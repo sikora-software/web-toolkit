@@ -1,0 +1,40 @@
+{
+  "name": "@sikora-software/prettier-config-angular",
+  "version": "0.0.0",
+  "description": "Shared Prettier configuration for Angular projects.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettier-config-angular",
+    "angular",
+    "formatting",
+    "typescript",
+    "web"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@sikora-software/prettier-config": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/prettier-config-angular"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/prettier-config-angular",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  }
+}

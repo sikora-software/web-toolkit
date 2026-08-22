@@ -1,0 +1,40 @@
+{
+  "name": "@sikora-software/prettier-config",
+  "version": "0.0.0",
+  "description": "Shared Prettier configuration for JavaScript, TypeScript, and web projects.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "formatting",
+    "javascript",
+    "typescript",
+    "code-formatting",
+    "web"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/prettier-config"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/prettier-config",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@sikora-software/prettier-config-astro",
+  "version": "0.0.0",
+  "description": "Shared Prettier configuration for Astro projects.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettier-config-astro",
+    "astro",
+    "astrojs",
+    "formatting",
+    "typescript",
+    "web"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@sikora-software/prettier-config": "workspace:*",
+    "prettier-plugin-astro": "^0.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/prettier-config-astro"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/prettier-config-astro",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  }
+}
