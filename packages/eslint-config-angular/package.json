@@ -1,0 +1,45 @@
+{
+  "name": "@sikora-software/eslint-config-angular",
+  "version": "0.0.0",
+  "description": "Shared ESLint configuration for Angular projects using TypeScript and ESLint flat config.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-config-angular",
+    "angular",
+    "typescript",
+    "linting",
+    "code-quality",
+    "eslint-flat-config"
+  ],
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  },
+  "dependencies": {
+    "@sikora-software/eslint-config": "workspace:*",
+    "angular-eslint": "^22.1.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.17.1",
+    "typescript-eslint": "^8.67.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikora-software/web-toolkit.git",
+    "directory": "packages/eslint-config-angular"
+  },
+  "homepage": "https://github.com/sikora-software/web-toolkit/tree/main/packages/eslint-config-angular",
+  "bugs": {
+    "url": "https://github.com/sikora-software/web-toolkit/issues"
+  }
+}
