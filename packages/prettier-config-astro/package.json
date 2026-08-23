@@ -24,11 +24,11 @@
     "web"
   ],
   "peerDependencies": {
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.14.0"
   },
   "dependencies": {
-    "@sikora-software/prettier-config": "workspace:*",
-    "prettier-plugin-astro": "^0.14.1"
+    "@sikora-software/prettier-config": "workspace:*"
   },
   "repository": {
     "type": "git",
