@@ -8,7 +8,7 @@ This package extends
 ## Installation
 
 ```bash
-npm install --save-dev prettier @sikora-software/prettier-config-astro
+npm install --save-dev prettier prettier-plugin-astro @sikora-software/prettier-config-astro
 ```
 
 ## Usage
