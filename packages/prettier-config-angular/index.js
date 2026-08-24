@@ -1,6 +1,9 @@
+// @ts-check
+
 import baseConfig from '@sikora-software/prettier-config';
 
-export default {
+/** @type {import("prettier").Config} */
+const config = {
   ...baseConfig,
 
   overrides: [
@@ -12,3 +15,5 @@ export default {
     },
   ],
 };
+
+export default config;

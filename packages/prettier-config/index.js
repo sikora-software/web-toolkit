@@ -1,5 +1,7 @@
+// @ts-check
+
 /** @type {import("prettier").Config} */
-export default {
+const config = {
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
@@ -11,3 +13,5 @@ export default {
   arrowParens: 'always',
   endOfLine: 'lf',
 };
+
+export default config;
