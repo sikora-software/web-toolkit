@@ -19,10 +19,17 @@ const config = [
     },
   },
 
+  // Rules for all JS/TS files
   {
     rules: {
       'no-unused-vars': 'off',
+    },
+  },
 
+  // TypeScript rules
+  {
+    files: ['**/*.{ts,tsx,mts,cts}'],
+    rules: {
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
