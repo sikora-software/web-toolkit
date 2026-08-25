@@ -3,7 +3,7 @@
 Shared Prettier configuration for Angular projects.
 
 This package extends
-`@sikora-software/prettier-config` with Angular file formatting support.
+`@sikora-software/prettier-config` with formatting preferences for Angular projects.
 
 ## Installation
 
