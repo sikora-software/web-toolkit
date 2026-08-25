@@ -1,6 +1,6 @@
 {
   "name": "@sikora-software/eslint-config-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared ESLint configuration for React projects using TypeScript and ESLint flat config.",
   "license": "MIT",
   "type": "module",

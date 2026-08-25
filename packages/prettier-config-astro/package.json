@@ -1,6 +1,6 @@
 {
   "name": "@sikora-software/prettier-config-astro",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared Prettier configuration for Astro projects.",
   "license": "MIT",
   "type": "module",
