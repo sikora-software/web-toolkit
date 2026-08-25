@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@sikora-software/eslint-config": "workspace:*",
-    "@typescript-eslint/parser": "^8.67.0",
+    "@typescript-eslint/parser": "^8.68.0",
     "astro-eslint-parser": "^3.1.0",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-astro": "^3.1.0",
