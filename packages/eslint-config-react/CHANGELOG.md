@@ -1,5 +1,12 @@
 # @sikora-software/eslint-config-react
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @sikora-software/eslint-config@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes

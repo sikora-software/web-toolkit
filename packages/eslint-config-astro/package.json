@@ -1,6 +1,6 @@
 {
   "name": "@sikora-software/eslint-config-astro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared ESLint configuration for Astro projects using TypeScript and ESLint flat config.",
   "license": "MIT",
   "type": "module",
