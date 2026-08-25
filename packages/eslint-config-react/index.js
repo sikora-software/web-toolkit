@@ -33,15 +33,13 @@ const config = [
     },
 
     plugins: {
-      reactX,
+      'react-x': reactX,
     },
 
     rules: {
       ...reactX.configs.recommended.rules,
 
       'react-x/prop-types': 'off',
-
-      'react-x/no-unescaped-entities': 'warn',
     },
   },
 
