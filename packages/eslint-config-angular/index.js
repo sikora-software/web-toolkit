@@ -6,7 +6,8 @@ import importPlugin from 'eslint-plugin-import-x';
 
 import baseConfig from '@sikora-software/eslint-config';
 
-export default defineConfig([
+/** @type {import('eslint').Linter.Config[]} */
+const config = defineConfig([
   ...baseConfig,
 
   // Angular TypeScript files.
@@ -125,3 +126,5 @@ export default defineConfig([
     ignores: ['dist', 'node_modules', '.angular'],
   },
 ]);
+
+export default config;

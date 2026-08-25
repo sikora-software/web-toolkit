@@ -4,7 +4,8 @@ import eslint from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   eslint.configs.recommended,
 
   ...tseslint.configs.recommended,
@@ -40,3 +41,5 @@ export default [
     },
   },
 ];
+
+export default config;

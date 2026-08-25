@@ -9,7 +9,8 @@ import typescriptParser from '@typescript-eslint/parser';
 
 import baseConfig from '@sikora-software/eslint-config';
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   ...baseConfig,
 
   // React.
@@ -48,12 +49,10 @@ export default [
   {
     files: ['**/*.{jsx,tsx}'],
 
-    plugins: {
-      'react-hooks': reactHooks,
-    },
+    ...reactHooks.configs.flat.recommended,
 
     rules: {
-      ...reactHooks.configs.recommended.rules,
+      ...reactHooks.configs.flat.recommended.rules,
 
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
@@ -182,3 +181,5 @@ export default [
     ignores: ['dist', 'node_modules'],
   },
 ];
+
+export default config;

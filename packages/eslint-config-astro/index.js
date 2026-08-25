@@ -8,7 +8,8 @@ import typescriptParser from '@typescript-eslint/parser';
 
 import baseConfig from '@sikora-software/eslint-config';
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   ...baseConfig,
 
   // Astro recommended configuration.
@@ -158,3 +159,5 @@ export default [
     ignores: ['dist', 'node_modules', '.astro', 'types.generated.d.ts', '.github', 'worker-configuration.d.ts'],
   },
 ];
+
+export default config;
