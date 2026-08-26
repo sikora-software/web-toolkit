@@ -14,3 +14,4 @@ minimumReleaseAgeExclude:
   - '@typescript-eslint/utils@8.68.0'
   - '@typescript-eslint/visitor-keys@8.68.0'
   - typescript-eslint@8.68.0
+  - eslint-plugin-react-refresh@0.5.5
