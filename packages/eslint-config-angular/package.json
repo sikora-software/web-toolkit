@@ -2,6 +2,7 @@
   "name": "@sikora-software/eslint-config-angular",
   "version": "0.1.1",
   "description": "Shared ESLint configuration for Angular projects using TypeScript and ESLint flat config.",
+  "author": "Mateusz Sikora (https://sikora.software)",
   "license": "MIT",
   "type": "module",
   "main": "./index.js",

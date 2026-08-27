@@ -2,6 +2,7 @@
   "name": "@sikora-software/prettier-config",
   "version": "0.1.0",
   "description": "Shared Prettier configuration for JavaScript, TypeScript, and web projects.",
+  "author": "Mateusz Sikora (https://sikora.software)",
   "license": "MIT",
   "type": "module",
   "main": "./index.js",

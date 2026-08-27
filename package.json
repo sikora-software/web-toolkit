@@ -1,10 +1,11 @@
 {
   "name": "@sikora-software/web-toolkit",
   "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "description": "Shared ESLint, Prettier, TypeScript, and web development tooling",
+  "description": "Shared web development tooling and configurations for JavaScript and TypeScript projects.",
+  "author": "Mateusz Sikora (https://sikora.software)",
   "license": "MIT",
+  "type": "module",
+  "private": true,
   "scripts": {
     "format": "prettier . --write",
     "format:check": "prettier . --check"
