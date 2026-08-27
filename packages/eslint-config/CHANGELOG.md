@@ -1,5 +1,11 @@
 # @sikora-software/eslint-config
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated `@typescript-eslint/restrict-template-expressions` rule to allow numbers directly in template literals.
+
 ## 0.2.0
 
 ### Minor Changes

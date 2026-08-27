@@ -38,7 +38,6 @@ const config = [
 
     rules: {
       ...reactX.configs.recommended.rules,
-
       'react-x/prop-types': 'off',
     },
   },
@@ -51,7 +50,6 @@ const config = [
 
     rules: {
       ...reactHooks.configs.flat.recommended.rules,
-
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
     },
@@ -89,10 +87,9 @@ const config = [
   },
 
   // Imports.
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   {
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
-
     files: ['**/*.{js,jsx,ts,tsx}'],
 
     settings: {
@@ -119,16 +116,16 @@ const config = [
         {
           '': 'never',
           js: 'never',
-          jsx: 'never',
+          jsx: 'always',
           ts: 'never',
-          tsx: 'never',
+          tsx: 'always',
         },
       ],
 
       'import-x/order': [
-        'warn',
+        'error',
         {
-          groups: ['external', 'builtin', 'internal'],
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
 
           pathGroups: [
             {
@@ -136,6 +133,8 @@ const config = [
               group: 'internal',
             },
           ],
+
+          pathGroupsExcludedImportTypes: ['builtin'],
 
           alphabetize: {
             order: 'asc',
@@ -147,7 +146,7 @@ const config = [
       ],
 
       'sort-imports': [
-        'warn',
+        'error',
         {
           ignoreCase: false,
           ignoreDeclarationSort: true,
@@ -157,9 +156,10 @@ const config = [
         },
       ],
 
-      'import-x/no-named-as-default-member': 'off',
-      'import-x/no-named-as-default': 'off',
+      'import-x/namespace': 'off',
       'import-x/default': 'off',
+      'import-x/no-named-as-default': 'off',
+      'import-x/no-named-as-default-member': 'off',
     },
   },
 
@@ -169,7 +169,6 @@ const config = [
 
     rules: {
       'no-console': 'warn',
-
       'max-lines': ['error', 300],
     },
   },
