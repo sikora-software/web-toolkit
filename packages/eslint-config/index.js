@@ -19,17 +19,11 @@ const config = [
     },
   },
 
-  // Rules for all JS/TS files
-  {
-    rules: {
-      'no-unused-vars': 'off',
-    },
-  },
-
   // TypeScript rules
   {
     files: ['**/*.{ts,tsx,mts,cts}'],
     rules: {
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
@@ -37,13 +31,9 @@ const config = [
           destructuredArrayIgnorePattern: '^_',
         },
       ],
-
       '@typescript-eslint/no-non-null-assertion': 'off',
-
-      '@typescript-eslint/no-explicit-any': 'warn',
-
+      '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-
       '@typescript-eslint/explicit-function-return-type': 'error',
     },
   },
