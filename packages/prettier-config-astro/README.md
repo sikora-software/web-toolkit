@@ -29,6 +29,12 @@ The configuration supports formatting:
 - Astro components
 - Other files supported by Prettier
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

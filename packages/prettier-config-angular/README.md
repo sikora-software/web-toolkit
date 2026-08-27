@@ -28,6 +28,12 @@ The configuration supports formatting:
 - Angular components
 - Other files supported by Prettier
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

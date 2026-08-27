@@ -35,6 +35,12 @@ For framework-specific projects, use one of the following:
 - `@sikora-software/eslint-config-react`
 - `@sikora-software/eslint-config-angular`
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

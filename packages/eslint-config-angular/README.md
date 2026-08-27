@@ -45,6 +45,12 @@ Directives use:
 
 `app*`
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

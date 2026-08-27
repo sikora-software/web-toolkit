@@ -4,8 +4,6 @@ Shared web development tooling and configurations for JavaScript and TypeScript 
 
 The toolkit provides reusable ESLint and Prettier configurations for Astro, React, Angular, and other web projects.
 
-Maintained by [https://sikora.software](https://sikora.software).
-
 ## Packages
 
 ### ESLint
@@ -29,6 +27,12 @@ Maintained by [https://sikora.software](https://sikora.software).
 - Framework-specific configurations
 - Versioned npm packages
 - Easy CI/CD integration
+
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
 
 ## License
 

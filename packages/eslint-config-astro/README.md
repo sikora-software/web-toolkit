@@ -63,6 +63,12 @@ This configuration includes:
 - Astro
 - TypeScript
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

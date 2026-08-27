@@ -37,6 +37,12 @@ For framework-specific projects, use:
 - `@sikora-software/prettier-config-astro`
 - `@sikora-software/prettier-config-angular`
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT

@@ -35,6 +35,12 @@ export default config;
 - Import extension rules
 - Project code-quality rules
 
+---
+
+## Author
+
+Created and maintained by [Mateusz Sikora](https://sikora.software).
+
 ## License
 
 MIT
