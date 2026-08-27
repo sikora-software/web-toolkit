@@ -1,5 +1,8 @@
 # @sikora-software/eslint-config-astro
 
+[![npm version](https://img.shields.io/npm/v/@sikora-software/eslint-config-astro.svg?style=flat-square)](https://www.npmjs.com/package/@sikora-software/eslint-config-astro)
+[![license](https://img.shields.io/npm/l/@sikora-software/eslint-config-astro.svg?style=flat-square)](https://github.com/sikora-software/@sikora-software/eslint-config-astro/blob/main/LICENSE)
+
 Shared ESLint configuration for Astro projects using TypeScript and ESLint flat config.
 
 This package extends
@@ -42,7 +45,6 @@ This configuration includes:
 - Consistent type definitions
 - Explicit function return types
 - Unused variable detection
-- Configurable `any` usage
 
 ### Imports
 

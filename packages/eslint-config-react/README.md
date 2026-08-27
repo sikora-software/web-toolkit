@@ -1,5 +1,8 @@
 # @sikora-software/eslint-config-react
 
+[![npm version](https://img.shields.io/npm/v/@sikora-software/eslint-config-react.svg?style=flat-square)](https://www.npmjs.com/package/@sikora-software/eslint-config-react)
+[![license](https://img.shields.io/npm/l/@sikora-software/eslint-config-react.svg?style=flat-square)](https://github.com/sikora-software/@sikora-software/eslint-config-react/blob/main/LICENSE)
+
 Shared ESLint configuration for React projects using TypeScript, JSX, and
 ESLint flat config.
 

@@ -1,5 +1,8 @@
 # @sikora-software/prettier-config-angular
 
+[![npm version](https://img.shields.io/npm/v/@sikora-software/prettier-config-angular.svg?style=flat-square)](https://www.npmjs.com/package/@sikora-software/prettier-config-angular)
+[![license](https://img.shields.io/npm/l/@sikora-software/prettier-config-angular.svg?style=flat-square)](https://github.com/sikora-software/@sikora-software/prettier-config-angular/blob/main/LICENSE)
+
 Shared Prettier configuration for Angular projects.
 
 This package extends

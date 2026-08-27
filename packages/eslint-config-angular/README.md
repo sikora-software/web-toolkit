@@ -1,5 +1,8 @@
 # @sikora-software/eslint-config-angular
 
+[![npm version](https://img.shields.io/npm/v/@sikora-software/eslint-config-angular.svg?style=flat-square)](https://www.npmjs.com/package/@sikora-software/eslint-config-angular)
+[![license](https://img.shields.io/npm/l/@sikora-software/eslint-config-angular.svg?style=flat-square)](https://github.com/sikora-software/@sikora-software/eslint-config-angular/blob/main/LICENSE)
+
 Shared ESLint configuration for Angular projects using TypeScript and
 ESLint flat config.
 

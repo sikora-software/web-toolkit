@@ -1,5 +1,8 @@
 # @sikora-software/eslint-config
 
+[![npm version](https://img.shields.io/npm/v/@sikora-software/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@sikora-software/eslint-config)
+[![license](https://img.shields.io/npm/l/@sikora-software/eslint-config.svg?style=flat-square)](https://github.com/sikora-software/@sikora-software/eslint-config/blob/main/LICENSE)
+
 Shared ESLint configuration for JavaScript and TypeScript projects.
 
 This package provides the base ESLint configuration.
