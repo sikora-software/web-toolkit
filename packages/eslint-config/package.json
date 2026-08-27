@@ -1,6 +1,6 @@
 {
   "name": "@sikora-software/eslint-config",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Shared ESLint configuration for JavaScript and TypeScript projects.",
   "author": "Mateusz Sikora (https://sikora.software)",
   "license": "MIT",
