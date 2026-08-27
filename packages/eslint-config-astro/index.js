@@ -5,6 +5,7 @@ import eslintPluginAstro from 'eslint-plugin-astro';
 import importPluginX from 'eslint-plugin-import-x';
 import jsxA11yX from 'eslint-plugin-jsx-a11y-x';
 import typescriptParser from '@typescript-eslint/parser';
+import tseslint from 'typescript-eslint';
 
 import baseConfig from '@sikora-software/eslint-config';
 
@@ -27,39 +28,12 @@ const config = [
     },
   },
 
-  // TypeScript files.
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    languageOptions: {
-      parser: typescriptParser,
-    },
-    rules: {
-      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-
-      '@typescript-eslint/explicit-function-return-type': 'error',
-
-      'no-unused-vars': 'off',
-
-      '@typescript-eslint/no-unused-vars': [
-        'warn',
-        {
-          argsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-        },
-      ],
-
-      '@typescript-eslint/no-non-null-assertion': 'off',
-
-      '@typescript-eslint/no-explicit-any': 'warn',
-    },
-  },
-
   // Astro files.
   {
     files: ['**/*.astro'],
-
     plugins: {
       'jsx-a11y-x': jsxA11yX,
+      '@typescript-eslint': tseslint.plugin,
     },
 
     languageOptions: {
@@ -73,24 +47,38 @@ const config = [
     rules: {
       'jsx-a11y-x/alt-text': 'error',
 
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+        },
+      ],
+      '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@typescript-eslint/explicit-function-return-type': 'error',
     },
   },
 
-  // Embedded scripts inside Astro files.
+  // Embedded scripts inside Astro files
   {
-    files: ['**/*.astro/*.ts', '**/*.astro/*.js'],
-
+    files: ['**/*.astro/*.js', '**/*.astro/*.ts'],
+    ...tseslint.configs.disableTypeChecked,
     languageOptions: {
       parser: typescriptParser,
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+    rules: {
+      'no-undef': 'off',
     },
   },
 
   // Import rules.
+  importPluginX.flatConfigs.recommended,
+  importPluginX.flatConfigs.typescript,
   {
-    ...importPluginX.flatConfigs.recommended,
-    ...importPluginX.flatConfigs.typescript,
-
     settings: {
       'import-x/parsers': {
         '@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -151,6 +139,18 @@ const config = [
           memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
         },
       ],
+
+      'import-x/no-unresolved': [
+        'error',
+        {
+          ignore: ['^~icons/', '^astro:'],
+        },
+      ],
+
+      'import-x/namespace': 'off',
+      'import-x/default': 'off',
+      'import-x/no-named-as-default': 'off',
+      'import-x/no-named-as-default-member': 'off',
     },
   },
 
