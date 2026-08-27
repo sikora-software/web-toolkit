@@ -1,5 +1,12 @@
 # @sikora-software/eslint-config-angular
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies
+  - @sikora-software/eslint-config@0.2.1
+
 ## 0.1.3
 
 ### Patch Changes
