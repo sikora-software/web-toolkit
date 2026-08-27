@@ -13,16 +13,9 @@ const config = defineConfig([
   // Angular TypeScript files.
   {
     files: ['**/*.ts'],
-
     extends: [...angular.configs.tsRecommended],
-
     processor: angular.processInlineTemplates,
-
     rules: {
-      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-
-      '@typescript-eslint/explicit-function-return-type': 'error',
-
       '@angular-eslint/directive-selector': [
         'error',
         {
@@ -31,7 +24,6 @@ const config = defineConfig([
           style: 'camelCase',
         },
       ],
-
       '@angular-eslint/component-selector': [
         'error',
         {
@@ -40,31 +32,29 @@ const config = defineConfig([
           style: 'kebab-case',
         },
       ],
+      '@typescript-eslint/no-extraneous-class': [
+        'error',
+        {
+          allowWithDecorator: true,
+        },
+      ],
     },
   },
 
   // Angular templates.
   {
     files: ['**/*.html'],
-
     extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
   },
 
   // Import rules.
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   {
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
-
     settings: {
-      'import-x/parsers': {
-        '@typescript-eslint/parser': ['.ts', '.tsx'],
-      },
-
+      'import-x/parsers': { '@typescript-eslint/parser': ['.ts'] },
       'import-x/resolver': {
-        node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        },
-
+        node: { extensions: ['.js', '.ts'] },
         typescript: {
           alwaysTryTypes: true,
           project: ['**/tsconfig.json'],
@@ -79,9 +69,7 @@ const config = defineConfig([
         {
           '': 'never',
           js: 'never',
-          jsx: 'never',
           ts: 'never',
-          tsx: 'never',
         },
       ],
 
