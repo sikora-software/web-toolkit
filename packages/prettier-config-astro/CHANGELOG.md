@@ -1,5 +1,13 @@
 # @sikora-software/prettier-config-astro
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated package metadata and added status badges to documentation.
+- Updated dependencies
+  - @sikora-software/prettier-config@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
