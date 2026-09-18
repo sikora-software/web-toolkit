@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "@sikora-software/eslint-config": "workspace:*",
-    "@typescript-eslint/parser": "^8.68.0",
+    "@typescript-eslint/parser": "^8.70.0",
     "astro-eslint-parser": "^3.1.0",
     "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-astro": "^3.1.0",
+    "eslint-plugin-astro": "^3.2.1",
     "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-jsx-a11y-x": "^0.2.0",
-    "typescript-eslint": "^8.68.0"
+    "typescript-eslint": "^8.70.0"
   },
   "repository": {
     "type": "git",
