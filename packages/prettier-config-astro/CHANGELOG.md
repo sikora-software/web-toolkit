@@ -1,5 +1,11 @@
 # @sikora-software/prettier-config-astro
 
+## 0.2.0
+
+### Minor Changes
+
+- Updated `prettier-plugin-astro` to the latest major version.
+
 ## 0.1.1
 
 ### Patch Changes
