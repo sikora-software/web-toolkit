@@ -1,5 +1,11 @@
 # @sikora-software/eslint-config
 
+## 0.2.3
+
+### Patch Changes
+
+- 3a9a24d: Updated dependencies
+
 ## 0.2.2
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @sikora-software/eslint-config-astro
 
+## 0.2.2
+
+### Patch Changes
+
+- 3a9a24d: Updated dependencies
+- Updated dependencies [3a9a24d]
+  - @sikora-software/eslint-config@0.2.3
+
 ## 0.2.1
 
 ### Patch Changes

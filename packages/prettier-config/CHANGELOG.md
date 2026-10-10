@@ -1,5 +1,11 @@
 # @sikora-software/prettier-config
 
+## 0.1.3
+
+### Patch Changes
+
+- 3a9a24d: Updated dependencies
+
 ## 0.1.2
 
 ### Patch Changes

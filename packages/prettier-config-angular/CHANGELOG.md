@@ -1,5 +1,12 @@
 # @sikora-software/prettier-config-angular
 
+## 0.1.3
+
+### Patch Changes
+
+- Updated dependencies [3a9a24d]
+  - @sikora-software/prettier-config@0.1.3
+
 ## 0.1.2
 
 ### Patch Changes
